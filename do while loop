@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class loops {
+	public static void main(String[] args) {
+		Scanner sc=new Scanner(System.in);
+		boolean a=true;
+		do {
+			System.out.println("I can do java coding.");
+			System.out.println("Can you do coding, enter true/false");
+			a=sc.nextBoolean();
+			if(!a) {
+				System.out.println("Why you can't do coding?");
+			}
+		}
+		while(a);
+	}
+}
