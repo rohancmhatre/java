@@ -1,1 +1,15 @@
-
+import java.util.Scanner;
+public class loops {
+	public static void main(String[] args) {
+		Scanner obj=new Scanner(System.in);
+		boolean a=true;
+		while(a) {
+			System.out.println("Its True");
+			System.out.println("Now, enter true/false: ");
+			a=obj.nextBoolean();
+			if(!a) {
+				System.out.println("Its False");
+			}
+		}
+	}
+}
