@@ -1,0 +1,31 @@
+package AdvancedJava;
+
+public class Certifications {
+
+	public static void main(String[] args) {
+		Course course=new Course();
+		course.courseName="Java Development";
+		System.out.println(course.courseName);
+		System.out.println("Your score is "+course.marks(30)+course.pass);
+	}
+	
+}
+class Course{
+	String courseName;
+	private int marks;
+	String pass=" Sorry Better luck next time.";
+	
+	int marks(int marks) { //marks which is private is now used via marks() method.
+ 		String pass=" Congrats You are passed!";
+ 		//For marks more than or equal to 50.
+		if(marks>=50) {
+		this.marks=marks;  //marks entered as arguments put in private int marks.
+		this.pass=pass;
+		}
+		//For marks less than 50
+		else {
+			this.marks=marks;  //marks entered as arguments put in private int marks.
+		}
+		return this.marks;  //The value of private int marks now after passing arguments.
+	}
+}
