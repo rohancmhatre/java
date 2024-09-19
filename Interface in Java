@@ -1,0 +1,59 @@
+//Public Interface created.
+package AbstractClass;
+
+public interface Foodie {
+	
+	void eat();
+
+}
+
+interface Dancer{
+	void dance();
+}
+
+class Person implements Foodie,Dancer{
+	
+	public void eat(){
+		System.out.println("I like to eat.");
+	}
+	
+	public void dance() {
+		System.out.println("I like to dance.");
+	}
+}
+//Inteface body ends here.
+
+//New public class is created in the same package as that of Interface.
+package AbstractClass;
+
+/* Methods 1: We extend the class Person that implements the interfaces.
+public class ExecuteInterface extends Person {
+
+	public static void main(String[] args) {
+		Person rohan=new Person();
+		rohan.eat();
+		rohan.dance();
+
+	}
+
+}
+*/
+
+/* Method 2: We implement the two interfaces created in this class ExecuteInterfaces*/
+public class ExecuteInterface implements Foodie,Dancer {
+	public void eat(){
+		System.out.println("I like to eat.");
+	}
+	
+	public void dance() {
+		System.out.println("I like to dance.");
+	}
+
+	public static void main(String[] args) {
+		Person rohan=new Person();
+		rohan.eat();
+		rohan.dance();
+
+	}
+
+}
