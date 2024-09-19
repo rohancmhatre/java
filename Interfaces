@@ -1,0 +1,65 @@
+package AbstractClass;
+
+public class AbstractExample{
+
+	public static void main(String[] args) {
+		Car swift=new Car("Swift"); //Created Swift from class Car.
+		swift.accelerate();
+		swift.brake();
+		
+		Scooter activa=new Scooter("Activa"); // Created Activa from class Scooter.
+		activa.accelerate();
+		activa.brake();
+		
+	}
+
+}
+
+abstract class Vehicle {  //Vehicle class is abstract
+
+	abstract void accelerate();
+	
+	abstract void brake();
+	
+	void AC() {
+		System.out.println("AC is not nessecary, hence its not abstract.");
+	}
+	
+}
+
+class Car extends Vehicle{ //Car class
+	String carName;
+	Car(String carName){
+		this.carName=carName;
+	}
+	Car(){
+		
+	}
+	
+	void accelerate() {
+		System.out.println(this.carName+" Car is accelerating.");
+	}
+	public void brake() {
+		System.out.println(this.carName+" Car is braking.");
+	}
+} //Car class body ends here
+
+class Scooter extends Vehicle{ //Scooter class
+	String scooterName;
+	Scooter(String scooterName){
+		this.scooterName=scooterName;
+	}
+	Scooter(){
+		
+	}
+	
+	public void accelerate() {
+		System.out.println(this.scooterName+" Scooter is accelerating.");
+	}
+	public void brake() {
+		System.out.println(this.scooterName+" Scooter is braking.");
+	}
+	void print() {
+		System.out.println("Classes Testing.");
+	}
+} //Scooter class body ends here
