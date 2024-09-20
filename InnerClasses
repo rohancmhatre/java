@@ -1,0 +1,25 @@
+package AdvancedJava;
+
+public class InnerClass {
+	String category;
+	
+	public class Toy{
+		String toyName;
+	}
+	
+	private class Clothes{
+		String toyName;
+	}
+	
+	
+	public static void main(String[] args) {
+		String category;
+		
+		InnerClass ic =new InnerClass();  //ic is an object of class InnerClass
+		Toy toy=ic.new Toy();  //toy is an object of Toy class created using ic object of InnerClass.
+
+		toy.toyName="Superman";
+		System.out.println("Toy name is "+toy.toyName);
+	}
+
+} //InnerClass body ends here.
