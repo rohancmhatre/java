@@ -41,16 +41,17 @@ public class ExecuteInterface extends Person {
 
 /* Method 2: We implement the two interfaces created in this class ExecuteInterfaces*/
 public class ExecuteInterface implements Foodie,Dancer {
-	public void eat(){
+	
+	public void eat(){  //Calling/defining abstract methods
 		System.out.println("I like to eat.");
 	}
 
-	public void dance() {
+	public void dance() {  //Calling/defining abstract methods
 		System.out.println("I like to dance.");
 	}
 
 	public static void main(String[] args) {
-		ExecuteInterface exect=new ExecuteInterface(); //exect is an object of class ExecuteInterface.
+		ExecuteInterface exect=new ExecuteInterface();
 		exect.eat();
 		exect.dance();
 	}
