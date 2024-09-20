@@ -50,7 +50,7 @@ public class ExecuteInterface implements Foodie,Dancer {
 	}
 
 	public static void main(String[] args) {
-		ExecuteInterface exect=new ExecuteInterface();
+		ExecuteInterface exect=new ExecuteInterface(); //exect is an object of class ExecuteInterface.
 		exect.eat();
 		exect.dance();
 	}
