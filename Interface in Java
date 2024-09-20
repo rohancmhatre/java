@@ -44,16 +44,14 @@ public class ExecuteInterface implements Foodie,Dancer {
 	public void eat(){
 		System.out.println("I like to eat.");
 	}
-	
+
 	public void dance() {
 		System.out.println("I like to dance.");
 	}
 
 	public static void main(String[] args) {
-		Person rohan=new Person();
-		rohan.eat();
-		rohan.dance();
-
+		ExecuteInterface exect=new ExecuteInterface();
+		exect.eat();
+		exect.dance();
 	}
-
 }
