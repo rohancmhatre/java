@@ -1,0 +1,20 @@
+public class Test {
+	static int testMarks;
+
+	public static void main(String[] args) {
+		System.out.println("Enter a number: ");
+		Scanner sc=new Scanner(System.in);
+		int number=sc.nextInt();  //input stored in number.
+		System.out.println("Entered number is: "+number);
+		while(number>10) {  //When number is less than it will need 0.____ in the quotient hence 0 cannot be considered as number for next iteration.
+		int mod=number%10;
+		System.out.print(mod);
+		int quotient=number/10;
+		number=quotient;
+			if(number<10) {
+			System.out.print(number);
+			}
+		}
+	}
+}	
+	
