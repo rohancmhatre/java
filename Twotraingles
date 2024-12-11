@@ -1,0 +1,25 @@
+public class Twotraingles {
+
+	public static void main(String[] args) {
+        for (int i = 1; i <= 3; i++) { 
+        	//For 3 horizontal lines, one below the other. 
+        	for(int j=3;j>i;j--){ //For right side spaces. 
+        		System.out.print(" "); 
+        		} 
+        	for(int k=1;k<=i;k++){
+        		System.out.print("* "); 
+        	}
+        	for(int s=3;s>=i;s--){
+        		System.out.print(" ");
+        	}
+        	for(int j=3;j>i;j--)
+        	{ //For right side spaces. 
+        		System.out.print(" "); 
+        	}
+        	for(int k=1;k<=i;k++){ 
+        		System.out.print("* "); 
+        	} 
+        	System.out.println();
+        	}
+	}
+}
