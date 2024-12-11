@@ -1,0 +1,25 @@
+import java.util.Scanner;
+public class Maxof3num {
+	public static void main(String[] args) {
+		System.out.println("Maximum of 3 numbers.");
+		System.out.print("Enter 3 numbers: ");
+		Scanner sc=new Scanner(System.in);
+		int a=sc.nextInt();
+		int b=sc.nextInt();
+		int c=sc.nextInt();
+		System.out.println("Entered numbers are: "+a+","+b+","+c);
+		if(b>c) {
+			if(a>b) {
+				System.out.println(a+" is the largest.");
+			}
+			else {
+				System.out.println(b+" is the largest.");
+			}
+		}
+		else {
+			if(c>a) {
+			System.out.println(c+" is the largest.");
+			}
+		}
+	}
+}
